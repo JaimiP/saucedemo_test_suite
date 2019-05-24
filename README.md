@@ -18,9 +18,9 @@ I chose to use Cucumber and Ruby to write this test suite because these are the 
 
 # Prerequisites
 Make sure you have the Ruby gems listed below installed
-    - selenium-webdriver
-    - rspec
-    - cucumber
+- selenium-webdriver
+- rspec
+- cucumber
 
 # Running Tests
 1. Copy the files found in the repo to a desired directory
