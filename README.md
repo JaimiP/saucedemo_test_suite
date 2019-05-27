@@ -17,15 +17,13 @@ My automated test examples using a test website created by SauceLabs.
 I chose to use Cucumber and Ruby to write this test suite because these are the tools used by my current company as well as my Mentor. I chose Cucumber as it is a popular framework and a great way to show how I have learned to organize my code.
 
 # Prerequisites
-Make sure you have the Ruby gems listed below installed
-- selenium-webdriver
-- rspec
-- cucumber
+Make sure you have the Ruby gem 'bundler' installed
 
 # Running Tests
 1. Copy the files found in the repo to a desired directory
 2. Open terminal and cd in to your selected directory then into the repo
-3. In the terminal execute: cucumber features
+3. Run bundle install to install any other required gems/versions.
+4. In the terminal execute: cucumber features
 
 # Notes and Comments
 1. You will notice that inside of my test suite, there is a page_functionality file. While this is not typically included when using cucumber, I chose to include this file to align with code organization procedures my current employer follows. This allows us to easily access code relevant to any particular webpage when testing features or processes that cross multiple pages.
