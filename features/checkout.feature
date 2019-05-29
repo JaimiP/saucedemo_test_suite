@@ -7,3 +7,8 @@ Scenario: Begin checkout process
 	Given I am logged in as a standard user with items in my cart
 	When I follow the checkout process
 	Then I should be directed to the checkout-complete page for confirmation
+
+Scenario: Confirm error for missing last name on checkout-step-one
+	Given a standard_user is ready to checkout
+	When they click continue with a missing last name
+	Then they will get an error requiring last name
