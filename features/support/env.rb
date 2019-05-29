@@ -6,3 +6,7 @@ Before do |scenario|
  $browser = Selenium::WebDriver.for :chrome
  $wait = Selenium::WebDriver::Wait.new(timeout: 15)
 end
+
+After do |scenario|
+  $browser.quit
+end
