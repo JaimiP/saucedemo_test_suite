@@ -12,7 +12,9 @@ end
 
 When (/^I follow the checkout process$/) do
   checkout = Checkout.new
-  checkout.checkout_process('Standard','User','84101')
+  checkout.checkout_step_one
+  checkout.checkout_step_two('Standard','User','84101')
+  checkout.checkout_step_three
 end
 
 Then (/^I should be directed to the checkout-complete page for confirmation$/) do
@@ -30,7 +32,8 @@ end
 
 When (/^they click continue with a missing last name$/) do
   checkout = Checkout.new
-  checkout.checkout_process('Standard','','84101')
+  checkout.checkout_step_one
+  checkout.checkout_step_two('Standard','','84101')
 end
 
 Then (/^they will get an error requiring last name$/) do
