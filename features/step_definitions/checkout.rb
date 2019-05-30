@@ -34,14 +34,6 @@ Then (/^they will get an error requiring last name$/) do
 end
 
 
-Given (/^a standard user is ready to checkout$/) do
-  $browser.get("https://www.saucedemo.com")
-  login = Login.new
-  login.login_user("standard_user")
-  add_to_cart = AddToCart.new
-  add_to_cart.add_item_to_cart
-end
-
 When (/^they click continue with a missing first name$/) do
   checkout = Checkout.new
   checkout.checkout_step_one
