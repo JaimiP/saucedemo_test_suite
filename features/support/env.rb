@@ -8,5 +8,5 @@ Before do |scenario|
 end
 
 After do |scenario|
-  $browser.quit
+  $browser.close
 end

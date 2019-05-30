@@ -9,6 +9,6 @@ Scenario: Adding an item to my cart displays remove button
 	Then the selected item should have a remove from cart button
 
 Scenario: Adding an item to the cart updates the cart badge
-	Given I am logged in
+	Given I am logged in to the SauceDemo site
 	When I add an item to my cart
 	Then I should see a badge appear over my cart icon

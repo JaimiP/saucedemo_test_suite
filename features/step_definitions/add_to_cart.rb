@@ -17,13 +17,6 @@ Then (/^the selected item should have a remove from cart button$/) do
 end
 
 
-
-Given (/^I am logged in$/) do
-  $browser.get("https://www.saucedemo.com")
-  login = Login.new
-  login.login_user("standard_user")
-end
-
 When (/^I add an item to my cart$/) do
   add_to_cart = AddToCart.new
   add_to_cart.add_item_to_cart

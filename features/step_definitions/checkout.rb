@@ -10,6 +10,7 @@ Given (/^I am logged in as a standard user with items in my cart$/) do
   add_to_cart.add_item_to_cart
 end
 
+
 When (/^I follow the checkout process$/) do
   checkout = Checkout.new
   checkout.checkout_process('Standard','User','84101')
@@ -19,14 +20,6 @@ Then (/^I should be directed to the checkout-complete page for confirmation$/) d
   expect($browser.current_url == "https://www.saucedemo.com/checkout-complete.html")
 end
 
-
-Given (/^a standard_user is ready to checkout$/) do
-  $browser.get("https://www.saucedemo.com")
-  login = Login.new
-  login.login_user("standard_user")
-  add_to_cart = AddToCart.new
-  add_to_cart.add_item_to_cart
-end
 
 When (/^they click continue with a missing last name$/) do
   checkout = Checkout.new

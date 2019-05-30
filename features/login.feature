@@ -9,11 +9,11 @@ Scenario: Log in to SauceDemo Website
 	Then I should be logged in and be directed to the home page
 
 Scenario: Incorrect username when attempting to log in
-	Given I am on the Log In page
+	Given I am on the SauceDemo Log In page
 	When I enter an incorrect username
 	Then I will get the Epic sadface error
 
 Scenario: Incorrect password when attempting to log in
-	Given I am on the SauceDemo login page
+	Given I am on the SauceDemo Log In page
 	When I enter an incorrect password
 	Then I will get an error

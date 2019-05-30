@@ -14,11 +14,6 @@ Then (/^I should be logged in and be directed to the home page$/) do
 end
 
 
-
-Given (/^I am on the Log In page$/) do
-  $browser.get("https://www.saucedemo.com")
-end
-
 When (/^I enter an incorrect username$/) do
   login = Login.new
   login.login_user("not_a_user")
@@ -28,11 +23,6 @@ Then (/^I will get the Epic sadface error$/) do
   expect($browser.find_element(:tag_name, "h3").text.include?("Username and password do not match")).to eql true
 end
 
-
-
-Given (/^I am on the SauceDemo login page$/) do
-  $browser.get("https://www.saucedemo.com")
-end
 
 When (/^I enter an incorrect password$/) do
   login = Login.new
