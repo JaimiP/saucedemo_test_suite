@@ -10,6 +10,7 @@ Given (/^I am logged in as a standard user with items in my cart$/) do
   add_to_cart.add_item_to_cart
 end
 
+
 When (/^I follow the checkout process$/) do
   checkout = Checkout.new
   checkout.checkout_step_one
@@ -22,14 +23,6 @@ Then (/^I should be directed to the checkout-complete page for confirmation$/) d
 end
 
 
-Given (/^a standard_user is ready to checkout$/) do
-  $browser.get("https://www.saucedemo.com")
-  login = Login.new
-  login.login_user("standard_user")
-  add_to_cart = AddToCart.new
-  add_to_cart.add_item_to_cart
-end
-
 When (/^they click continue with a missing last name$/) do
   checkout = Checkout.new
   checkout.checkout_step_one
@@ -40,14 +33,6 @@ Then (/^they will get an error requiring last name$/) do
   expect($browser.find_element(:tag_name, "h3").text.include?("Last Name is required")).to eql true
 end
 
-
-Given (/^a standard user is ready to checkout$/) do
-  $browser.get("https://www.saucedemo.com")
-  login = Login.new
-  login.login_user("standard_user")
-  add_to_cart = AddToCart.new
-  add_to_cart.add_item_to_cart
-end
 
 When (/^they click continue with a missing first name$/) do
   checkout = Checkout.new
