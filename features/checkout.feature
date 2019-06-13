@@ -17,3 +17,8 @@ Scenario: Confirm error for missing first name on checkout-step-one
 	Given I am logged in as a standard user with items in my cart
 	When they click continue with a missing first name
 	Then they will get an error requiring first name
+
+Scenario: Confirm error for missing postal code on checkout-step-one
+    Given I am logged in as a standard user with items in my cart
+    When they click continue with a missing postal code
+    Then they will get an error requiring postal code
