@@ -1,5 +1,4 @@
 require 'selenium-webdriver'
-require 'rspec'
 require 'yaml'
 require 'fileutils'
 

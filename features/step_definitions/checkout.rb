@@ -43,3 +43,14 @@ end
 Then (/^they will get an error requiring first name$/) do
   expect($browser.find_element(:tag_name, "h3").text.include?("First Name is required")).to eql true
 end
+
+
+When (/^they click continue with a missing postal code$/) do
+ checkout = Checkout.new
+ checkout.checkout_step_one
+ checkout.checkout_step_two('Standard','User', '')
+end
+
+Then (/^they will get an error requiring postal code$/) do
+ expect($browser.find_element(:tag_name, "h3").text.include?("Postal Code is required")).to eql true
+end
