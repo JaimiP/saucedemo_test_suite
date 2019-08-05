@@ -35,7 +35,7 @@ Make sure you have the Ruby gem 'bundler' installed
 * Eben Smith, AQA Manager at TaskEasy
   - Eben has personally invested a large amount of time as my mentor. He has been absolutely vital to my growth in both QA and Automation. For over a year he has been meeting with me weekly, to ensure I understand and master the skills I am learning. He has given me challenging projects and many resources to ensure my continued success in this field.
 * TaskEasy Inc.
-  - My current employer has given me the opportunity to truly change my life. I have developed professional relationships and friendships that have helped me to recognize my own potential, as well as the potential of others. They have recognized some of my talents and given me time daily to invest in myself as I learn more on my journey in to automation. They have truly allowed me to find and pursue a career I am passionate about.
+  - My previous employer has given me the opportunity to truly change my life. I have developed professional relationships and friendships that have helped me to recognize my own potential, as well as the potential of others. They have recognized some of my talents and given me time daily to invest in myself as I learn more on my journey in to automation. They have truly allowed me to find and pursue a career I am passionate about.
 * Carlos Kidman, Founder of QA at the Point
   - Carlos has helped me work on my resume, given direction on future studies, as well as creating the QA at the Point group. The classes, trainings, and resources I have been exposed to there are a vital part of my growth in this industry.
 * Ashlie Bolton, HelpDesk Analyst at TaskEasy
